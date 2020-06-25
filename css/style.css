@@ -149,6 +149,6 @@ html{
     transform: scale(1.15);
     cursor: pointer;
   }
-  *{
+  /* *{
     outline: 1px solid red;
-  }
+  } */
