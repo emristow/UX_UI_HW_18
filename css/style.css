@@ -17,7 +17,6 @@ html{
     height: 100vh;
     width: 40%;
     background: black;
-    position: fixed;
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75%;
+    height: 80%;
     width: 60%;
     font-family: 'quasimoda', sans-serif;
     font-weight: 100;
@@ -63,7 +62,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25%;
+    height: 20%;
     width: 100%;
   }
   .footerContent{
@@ -119,6 +118,12 @@ html{
     background-color: black;
     color: white;
   }
+  .responsiveImg{
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .content{
     height: 400vh;
     width: 100%;
@@ -149,6 +154,38 @@ html{
     transform: scale(1.15);
     cursor: pointer;
   }
-  /* *{
+  *{
     outline: 1px solid red;
-  } */
+  }
+  @media only screen and (min-width: 601px){
+    .sideBar{
+      position: fixed;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .wrapper{
+      height: 500vh;
+      flex-direction: column;
+    }
+    .sideBar{
+      width: 100vw;
+    }
+    header{
+      width: 85%;
+    }
+    .social{
+      padding: 10px;
+    }
+    .copyright{
+      padding: 10px;
+    }
+    .content{
+      margin: 0;
+    }
+    h1{
+      font-size: 32px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
